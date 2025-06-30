@@ -47,10 +47,12 @@ java {
     }
 }
 
-
-
 tasks.named('test') {
-    systemProperty 'cucumber.options',
-    system.getProperties("cucumber.options")
+    doFirst {
+        def cucumberOpts = System.getProperty("cucumber.options")
+        if (cucumberOpts != null) {
+            systemProperty 'cucumber.options', cucumberOpts
+        }
+    }
 }
 

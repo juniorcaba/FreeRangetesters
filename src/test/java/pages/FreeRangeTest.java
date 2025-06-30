@@ -21,7 +21,7 @@ public class FreeRangeTest {
     @Test
     public void testFreeRange() {
         //Navega a la URL de FreeRange
-        driver.get("https://www.freerange.com");
+        driver.get("https://www.freerangetesters.com/");
         //Verifica que el título de la página sea correcto
         //String title = driver.getTitle();
         //assert title.contains("FreeRange");
