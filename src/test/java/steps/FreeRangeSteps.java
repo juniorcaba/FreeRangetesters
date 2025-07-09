@@ -41,8 +41,6 @@ public class FreeRangeSteps {
     }
 }
 
-
-
     @And("Select Introducción al Testing de Software")
     public void navigateToIntro() {
         cursoPage.clickCursosLink(); // primero accede a la sección de cursos
