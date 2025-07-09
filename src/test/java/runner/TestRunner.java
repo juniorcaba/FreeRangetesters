@@ -17,7 +17,6 @@ import pages.BasePage;
 }
 )
 
-
 public class TestRunner {
         @AfterClass
         public static void cleanDriver() {
