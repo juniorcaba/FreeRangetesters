@@ -1,6 +1,5 @@
 package pages;
 
-// Importaciones necesarias
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +15,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
     protected static WebDriver driver;
-    
-    //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 public static void initializeDriver() {
     if (driver == null) {
@@ -107,7 +104,6 @@ public static void pause(int seconds) {
 
         return values;
 
-        
     }
 }
 
