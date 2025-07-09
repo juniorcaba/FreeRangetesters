@@ -15,8 +15,13 @@ Feature: Navigation bar
     #         | Blog       |
     #         | Recursos   |
 
-        Scenario: Courses are presented correctly to potential customers
+        # Scenario: Courses are presented correctly to potential customers
+        # Given I navigate to www.freerangetesters.com
+        # When I go to Cursos using the navigation bar
+        # And Select Introducción al Testing de Software
+        # Then I should see the page with the title "Introducción al Testing de Software"
+
+    Scenario: Users can select a plan when they click on "Empezar hoy"
         Given I navigate to www.freerangetesters.com
-        When I go to Cursos using the navigation bar
-        And Select Introducción al Testing de Software
-        Then I should see the page with the title "Introducción al Testing de Software"
+        When I select the "Empezar hoy" button
+        Then I can validate the opcions in the checkout page

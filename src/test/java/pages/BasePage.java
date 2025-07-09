@@ -2,6 +2,7 @@ package pages;
 
 // Importaciones necesarias
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -107,5 +108,18 @@ public static void pause(int seconds) {
     }
 }
 
+    public List<String> getDropdownValues(String locator) {
+        Select dropdown = new Select(Find(locator)); // Encuentra el elemento del dropdown usando el locator proporcionado
+        // Obtiene todas las opciones del dropdown
+        // y las almacena en una lista de WebElement
+        List<WebElement> dropdownOptions = dropdown.getOptions();
+        List<String> values = new ArrayList<>();
+        for (WebElement option : dropdownOptions) {
+            values.add(option.getText());
+        }
 
+        return values;
+
+    }
 }
+
