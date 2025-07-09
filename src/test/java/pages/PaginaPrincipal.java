@@ -32,4 +32,9 @@ public void clickElementWhenVisible(String xpath) {
         clickElement(xpathSection);
     }
 
+    public void clickOnElegirPlanButton() {
+        String xpathEmpezarHoyButton = "//a[normalize-space()='Empezar hoy' and @href]";
+        clickElementWhenVisible(xpathEmpezarHoyButton);
+    }
+
 }

@@ -14,6 +14,4 @@ public class PaginaRegistro extends BasePage {
         return getDropdownValues(planDropdown);
     }
 
-
-
 }
