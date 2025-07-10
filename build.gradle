@@ -41,8 +41,6 @@ dependencies {
 //     systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
 // }
 
-
-
 tasks.named('test') {
     doFirst {
         def cucumberOpts = System.getProperty("cucumber.options")
