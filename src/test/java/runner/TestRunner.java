@@ -14,8 +14,9 @@ import pages.BasePage;
         "pretty",
         "html:target/cucumber-reports",
         "json:target/cucumber.json"
-}
-)
+        
+},
+        tags = "@Plans")
 
 public class TestRunner {
         @AfterClass
