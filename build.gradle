@@ -38,8 +38,11 @@ dependencies {
 }
 
 // test {
-//     ignoreFailures = true
+//     systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
 // }
+
+
+
 tasks.named('test') {
     doFirst {
         def cucumberOpts = System.getProperty("cucumber.options")
@@ -52,9 +55,9 @@ tasks.named('test') {
     systemProperty "cucumber.options", System.getProperty("cucumber.options")
     systemProperties System.getProperties()
 }
-// application 
-    // Define the main class for the application.
 
-//Test para github usando SourceTree
-// nueva comentario
 
+// tasks.named('test') {
+//     systemProperty "cucumber.options", System.getProperty("cucumber.options")
+//     systemProperties System.getProperties();
+// }
