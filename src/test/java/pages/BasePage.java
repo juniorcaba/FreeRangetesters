@@ -101,7 +101,6 @@ public static void pause(int seconds) {
         for (WebElement option : dropdownOptions) {
             values.add(option.getText());
         }
-
         return values;
 
     }
