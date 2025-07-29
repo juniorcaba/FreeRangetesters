@@ -22,7 +22,7 @@ Feature: Navigation
     @Courses
     Scenario: Courses are presented correctly to potential customers
         When I go to Cursos using the navigation bar
-        And Select Introducción al Testing de Software
+        And I select Introducción al Testing de Software
         Then I should see the page with the title "Introducción al Testing de Software"
 
 

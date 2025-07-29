@@ -1,18 +1,24 @@
 {
-    "cucumberautocomplete.steps": ["src/test/java/steps/*.java"],
-    "cucumberautocomplete.syncfeatures": "test/features/*.feature",    "cucumberautocomplete.strictGherkinCompletion": true,
-    "cucumberautocomplete.strictGherkinValidation": true,
+  "cucumberautocomplete.steps": ["src/test/java/steps/*.java"],
+  "cucumberautocomplete.syncfeatures": "test/features/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.strictGherkinValidation": true,
 
-    "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "java.format.settings.url": ".vscode/java-formatter.xml",
-    "java.debug.settings.onBuildFailureProceed": true,
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.format.settings.url": ".vscode/java-formatter.xml",
+  "java.debug.settings.onBuildFailureProceed": true,
 
-    "terminal.integrated.defaultEncoding": "utf8",
-    "files.encoding": "utf8",
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
-    "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-24"
+  "terminal.integrated.defaultEncoding": "utf8",
+  "files.encoding": "utf8",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21",
 
-
-
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }
