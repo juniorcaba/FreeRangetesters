@@ -31,3 +31,4 @@ Feature: Navigation
         When I go to Academia using the navigation bar
         And I select the "Empezar hoy" button
         Then The user can see the options mensual and anual
+        
