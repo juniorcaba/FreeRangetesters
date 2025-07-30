@@ -73,5 +73,5 @@ public class FreeRangeSteps {
         BasePage.pause(5); // pausa reutilizable desde la clase base
 
     }
-// test kjsdhfjkhsd;kjgh;kjsdfhgk;jdhfglk;jhdfgkl;
+
 }

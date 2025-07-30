@@ -8,6 +8,7 @@ import pages.BasePage;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        //features = "classpath:features",
         features = "src/test/resources",
         glue = "steps",
         plugin = { 
@@ -24,5 +25,5 @@ public class TestRunner {
                 BasePage.closeBrowser();
         }
 
-        /////wjkhdjkhsdkjhsdjklf
+
 }
