@@ -13,15 +13,7 @@ import pages.BasePage;
         plugin = { 
         "pretty",
         "html:target/cucumber-reports",
-<<<<<<< HEAD
         "json:target/cucumber.json"
-=======
-        "json:target/cucumber.json",
-        "message:target/cucumber-messages.ndjson"
-
-        
-},
->>>>>>> 2f8cf7f (Test 05)
         
 },
         tags = "@Navigation")
