@@ -26,8 +26,9 @@ Feature: Navigation
         Then I should see the page with the title "Introducción al Testing de Software"
 
 
-    @Plans @Courses
+    @Plans #@Courses
     Scenario: Users can select a plan when they click on "Empezar hoy"
         When I go to Academia using the navigation bar
         And I select the "Empezar hoy" button
-        Then I can validate the options in the checkout page
+        Then The user can see the options mensual and anual
+        
